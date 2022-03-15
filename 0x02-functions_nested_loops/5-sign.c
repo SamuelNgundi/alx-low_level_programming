@@ -1,4 +1,4 @@
-#iclude "main"
+#iclude "main.h"
 /**
  * print_sign - print the signs of numbers
  * @n: the integer to check
