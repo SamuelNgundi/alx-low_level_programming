@@ -4,7 +4,7 @@
  * @array: array to search in
  * @size: the number of elements in the array
  * @cmp: pointer to the comparing values
- * Return : Index
+ * Return: Index
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
