@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
  * main - copies the content of a file to another file
  * @argc: number of arguments passed to the program
  * @argv: array of arguments
+ *
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
@@ -18,7 +20,7 @@ int main(int argc, char *argv[])
 	fd_r = open(argv[1], O_RDONLY);
 	if (fd_r < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -33,7 +35,7 @@ int main(int argc, char *argv[])
 	}
 	if (r < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from the file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	a = close(fd_r);
